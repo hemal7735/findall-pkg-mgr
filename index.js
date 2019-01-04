@@ -1,17 +1,16 @@
-const spawnSync = require("child_process").spawnSync;
+const spawnSync = require('child_process').spawnSync;
 
-const pkg_mgrs = ["npm", "yarn"];
+const supportedPackageManagers = ['npm', 'yarn'];
 
 function findAll() {
-  var result = [];
-
-  pkg_mgrs.forEach(mgr => {
-    if (!spawnSync(mgr, ["-v"]).error) {
-      result.push(mgr);
-    }
-  });
-
-  return result;
+  return supportedPackageManagers.filter(isAvailable);
 }
 
-module.exports = findAll;
+function isAvailable(packageManager) {
+  return !spawnSync(packageManager, ['-v']).error;
+}
+
+module.exports = {
+  findAll,
+  isAvailable
+}
