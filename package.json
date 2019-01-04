@@ -1,6 +1,6 @@
 {
   "name": "findall-pkg-mgr",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Finds all package managers for JS-ecosystem installed",
   "main": "index.js",
   "scripts": {
