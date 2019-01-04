@@ -19,8 +19,16 @@ npm install --save findall-pkg-mgr
 ```
 2. Use as a module
 ```javascript
-const findAll = require("findall-pkg-mgr");
-const pkg_mgrs = findAll();
+const findPkgMngr = require('findall-pkg-mgr');
 
+// Find all available package managers
+const pkg_mgrs = findPkgMngr.findAll();
 console.log(pkg_mgrs); // [ 'npm', 'yarn' ]
+
+// Check if a specific package manager is available
+const isNpmAvailable = findPkgMngr.isAvailable('npm');
+console.log(isNpmAvailable); // true
+
+const isYarnAvailable = findPkgMngr.isAvailable('yarn');
+console.log(isYarnAvailable); // false
 ```
