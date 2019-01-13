@@ -1,5 +1,7 @@
 # findall-pkg-mgr
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0e13c9072c8f4befba060ded7f63698c)](https://app.codacy.com/app/hemal7735/findall-pkg-mgr?utm_source=github.com&utm_medium=referral&utm_content=hemal7735/findall-pkg-mgr&utm_campaign=Badge_Grade_Dashboard)
+
 It finds all package-managers installed in the system. It finds them without requiring any external dependency.
 
 ## Why?
