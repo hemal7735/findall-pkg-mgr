@@ -4,7 +4,7 @@
   "description": "Finds all package managers for JS-ecosystem installed",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"done\""
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/hemal7735/findall-pkg-mgr/issues"
   },
-  "homepage": "https://github.com/hemal7735/findall-pkg-mgr#readme"
+  "homepage": "https://github.com/hemal7735/findall-pkg-mgr#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
 }

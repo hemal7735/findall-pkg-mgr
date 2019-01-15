@@ -13,4 +13,4 @@ function isAvailable(packageManager) {
 module.exports = {
   findAll,
   isAvailable
-}
+};
