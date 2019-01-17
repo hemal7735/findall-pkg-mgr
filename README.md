@@ -1,4 +1,4 @@
-# findall-pkg-mgr [![Build Status](https://travis-ci.org/hemal7735/findall-pkg-mgr.svg?branch=master)](https://travis-ci.org/hemal7735/findall-pkg-mgr)
+# findall-pkg-mgr [![Build Status](https://travis-ci.org/hemal7735/findall-pkg-mgr.svg?branch=master)](https://travis-ci.org/hemal7735/findall-pkg-mgr) [![codecov](https://codecov.io/gh/hemal7735/findall-pkg-mgr/branch/master/graph/badge.svg)](https://codecov.io/gh/hemal7735/findall-pkg-mgr)
 
 It finds all package-managers installed in the system. It finds them without requiring any external dependency.
 
