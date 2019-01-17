@@ -3,6 +3,14 @@ node_js:
   - "10"
   - "8"
   - "6"
+before_install:
+  - npm i -g npm
+install:
+  - travis_wait npm ci
+  - npm install -g codecov
+script:
+  - npm run test
+  - codecov
 cache:
   directories:
     - ~/.npm
